@@ -6,3 +6,6 @@ require("nvim-tree").setup({
     adaptive_size = true
   }
 })
+
+
+

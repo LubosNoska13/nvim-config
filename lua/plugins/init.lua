@@ -43,6 +43,9 @@ local plugins = {
 
     -- Block indetation
     "lukas-reineke/indent-blankline.nvim",
+    
+    -- Move between windows with vim keys
+    {"christoomey/vim-tmux-navigator", lazy=false}
 }
 
 local opts = {

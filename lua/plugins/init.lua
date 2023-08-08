@@ -38,14 +38,18 @@ local plugins = {
     -- auto closing
     "windwp/nvim-autopairs",
     "windwp/nvim-ts-autotag",
-
+    
+    -- Move between split windows
     "tpope/vim-surround",
 
     -- Block indetation
     "lukas-reineke/indent-blankline.nvim",
     
     -- Move between windows with vim keys
-    {"christoomey/vim-tmux-navigator", lazy=false}
+    {"christoomey/vim-tmux-navigator", lazy=false},
+    
+    -- Git signs
+    "lewis6991/gitsigns.nvim"
 }
 
 local opts = {

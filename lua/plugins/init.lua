@@ -56,7 +56,15 @@ local plugins = {
     'nvim-telescope/telescope.nvim', tag = '0.1.2',
     -- or                         , branch = '0.1.x',
       dependencies = { 'nvim-lua/plenary.nvim' }
-    }
+    },
+
+    -- Autocompletion
+    "hrsh7th/nvim-cmp",
+    "hrsh7th/cmp-buffer",
+    "hrsh7th/cmp-path",
+
+    "L3MON4D3/LuaSnip",
+    "saadparwaiz1/cmp_luasnip"
 }
 
 local opts = {

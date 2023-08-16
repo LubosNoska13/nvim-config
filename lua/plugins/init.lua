@@ -49,7 +49,14 @@ local plugins = {
     {"christoomey/vim-tmux-navigator", lazy=false},
     
     -- Git signs
-    "lewis6991/gitsigns.nvim"
+    "lewis6991/gitsigns.nvim",
+
+    -- Telescope
+    {
+    'nvim-telescope/telescope.nvim', tag = '0.1.2',
+    -- or                         , branch = '0.1.x',
+      dependencies = { 'nvim-lua/plenary.nvim' }
+    }
 }
 
 local opts = {

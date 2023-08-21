@@ -63,8 +63,25 @@ local plugins = {
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-path",
 
-    "L3MON4D3/LuaSnip",
-    "saadparwaiz1/cmp_luasnip"
+    -- Snippets
+    {
+        "L3MON4D3/LuaSnip",
+        dependencies = { "rafamadriz/friendly-snippets" },
+    },
+    "saadparwaiz1/cmp_luasnip",
+
+    -- Managing and Installing lsp server
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+
+    -- Configuring lsp server 
+    "neovim/nvim-lspconfig",
+
+    -- Lsp Autocompletion
+    "hrsh7th/cmp-nvim-lsp",
+
+    -- Icons for autocompletion menu
+    "onsails/lspkind.nvim",
 }
 
 local opts = {

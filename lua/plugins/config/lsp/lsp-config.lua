@@ -53,15 +53,15 @@ local on_attach = function(client, bufnr)
 
 end
 
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local capabilities = cmp_nvim_lsp.default_capabilities()
 
 local servers = {
-    "lua_ls", 
-    "html",
-    "cssls",
-    "clangd",
-    "cmake",
-    "pyright",
+    "lua_ls",  -- Lua
+    "html", -- Html
+    "cssls", -- Css
+    "clangd", -- C
+    "cmake", -- Cmake
+    "pyright", -- Python
 }
 
 for _, server in ipairs(servers) do

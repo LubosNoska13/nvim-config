@@ -12,6 +12,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Spacebar is a leader key
 vim.g.mapleader = " "
 
 local plugins = {
@@ -32,14 +33,14 @@ local plugins = {
     -- Comments
     "numToStr/Comment.nvim",
 
-    -- statusline
+    -- Statusline
     "nvim-lualine/lualine.nvim",
 
-    -- auto closing
+    -- Auto closing
     "windwp/nvim-autopairs",
     "windwp/nvim-ts-autotag",
     
-    -- Move between split windows
+    -- Change or Delete surrounding tags
     "tpope/vim-surround",
 
     -- Block indetation

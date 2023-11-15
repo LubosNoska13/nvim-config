@@ -20,17 +20,17 @@ cmp.setup({
     snippet = {
       -- REQUIRED - you must specify a snippet engine
         expand = function(args)
-            require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+            luasnip.lsp_expand(args.body) -- For `luasnip` users.
         end,
     },
     mapping = cmp.mapping.preset.insert({
 
-        ['<C-k>'] = cmp.mapping.select_prev_item(),
-        ['<C-j>'] = cmp.mapping.select_next_item(),
+        ['<C-k>'] = cmp.mapping.select_prev_item(), -- Move up in menu
+        ['<C-j>'] = cmp.mapping.select_next_item(), -- Move down in menu
         ['<C-b>'] = cmp.mapping.scroll_docs(-1),
         ['<C-f>'] = cmp.mapping.scroll_docs(1),
         ['<C-Space>'] = cmp.mapping.complete(),
-        ['<C-e>'] = cmp.mapping {
+        ['<C-e>'] = cmp.mapping {  -- Close menu
             i = cmp.mapping.abort(),
             c = cmp.mapping.close(),
         },

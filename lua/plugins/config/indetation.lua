@@ -4,7 +4,7 @@ if not setup then
 end
 
 vim.opt.list = true
-vim.opt.listchars:append "space:⋅"
+vim.opt.listchars:append "space:⋅" 
 
 indent.setup {
     space_char_blankline = " ",

@@ -4,8 +4,8 @@ if not status then
   return
 end
 
-require'nvim-treesitter.configs'.setup {
-    -- A list of parser names, or "all"
+treesitter.setup {
+    -- List of all languages
     ensure_installed = { "c", "lua", "vim", "python", "html", "css", "json", "gitignore", "make", "bash", "markdown", "cmake" },
 
     -- Install parsers synchronously (only applied to `ensure_installed`)
